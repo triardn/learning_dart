@@ -1,3 +1,7 @@
+import "dart:io";
+
 void main(List<String> arguments) {
-  print('Hello world');
+  String text = stdin.readLineSync(); // should use string for exact data-type
+  int number = int.tryParse(text);
+  print('Hello world, $number!');
 }
